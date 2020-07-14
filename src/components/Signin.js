@@ -34,8 +34,9 @@ function Signin() {
   }
   return (
     <React.Fragment>
-    <h>Sign in boiiiii</h>
-      <form onSubmit={doSignUp}>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <h5>Sign Up</h5>
+      <form onSubmit={doSignUp} class="form-group">
         <input
           type='text'
           name='email'
@@ -46,7 +47,7 @@ function Signin() {
           placeholder='Password' />
         <button type='submit'>Sign up</button>
       </form>
-      <h1>Sign In</h1>
+      <h5>Sign In</h5>
       <form onSubmit={doSignIn}>
         <input
           type='text'
@@ -58,8 +59,9 @@ function Signin() {
           placeholder='Password' />
         <button type='submit'>Sign in</button>
       </form>
-      <h1>Sign Out</h1>
+      <h5>Sign Out</h5>
       <button onClick={doSignOut}>Sign out</button>
+      </nav>
     </React.Fragment>
   )
 }
